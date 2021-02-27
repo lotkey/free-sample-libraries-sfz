@@ -2,7 +2,25 @@
 All of my free sample libraries with SFZ files configured for any SFZ-based sampler.
 
 ## The Libraries
+### Baritone Stratocaster
+The Stratocaster in question is my MIM Fender Blacktop Stratocaster. I have swapped out the neck for a Warmoth Baritone Conversion Neck (28 5/8" scale). I have replaced the pickups with a Dimarzio D Activator in the bridge and added a coil split.  
 
+I have recorded two libraries with the Baritone Stratocaster: Humbucker and Split Coil. As the name suggests, the humbucker library is recorded with the full humbucker. The split coil library is recorded with the north coil of the humbucker.
+
+#### Velocity Map
+0 - 32: Medium Velocity Palm Mutes  
+33 - 63: High Velocity Palm Mutes  
+64 - 96: Medium Velocity Open Notes  
+97 - 127: High Velocity Open Notes  
+
+### Shecter Bass
+The bass in question is my Schecter Diamond Series Elite-5. I have made no modifications. The pickups are the default EMG HZ pickups.
+
+I have recorded one library with this bass.
+
+#### Velocity Map
+0 - 63: Medium Velocity Open Notes
+64 - 127: High Velocity Open Notes
 
 ## What is SFZ?
 
