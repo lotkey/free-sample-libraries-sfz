@@ -1,0 +1,350 @@
+/*
+Synth Chris
+https://synthchrismusic.wixsite.com/music
+
+Guitar sampled:
+MIM Fender Blacktop Stratocaster
+Warmoth Baritone Conversion Neck (28 5/8" scale)
+Dimarzio D Activator Bridge Pickup, Full Humbucking
+D'Addario Strings________________________________________
+Note           |  G#1 |  D#2 |  G#2 |  C#3 |  F3  |  A#3 |
+Gauge (Inches) | .064 | .049 | .039 | .028 | .018 | .014 |
+*/
+
+<control>
+default_path=./Guitar/Humbucker/ // Relative path of the samples
+
+<global>
+seq_length=4
+ampeg_release=0.1
+amp_veltrack=0
+
+/* ========================================================================= *
+ * Open Notes
+ * ========================================================================= */
+
+<group>
+/*
+ * Middle Velocity 
+ * For alternate picking and such
+ * Left channel
+ */
+pan=-100
+lovel=64 
+hivel=96
+
+<region> sample=G#1_1_1.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=1
+<region> sample=G#1_2_1.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=2
+<region> sample=G#1_3_1.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=3
+<region> sample=G#1_4_1.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=4
+
+<region> sample=D#2_1_1.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=1
+<region> sample=D#2_2_1.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=2
+<region> sample=D#2_3_1.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=3
+<region> sample=D#2_4_1.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=4
+
+<region> sample=G#2_1_1.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=1
+<region> sample=G#2_2_1.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=2
+<region> sample=G#2_3_1.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=3
+<region> sample=G#2_4_1.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=4
+
+<region> sample=C#3_1_1.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=1
+<region> sample=C#3_2_1.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=2
+<region> sample=C#3_3_1.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=3
+<region> sample=C#3_4_1.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=4
+
+<region> sample=F3_1_1.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=1
+<region> sample=F3_2_1.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=2
+<region> sample=F3_3_1.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=3
+<region> sample=F3_4_1.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=4
+
+<region> sample=A#3_1_1.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=1
+<region> sample=A#3_2_1.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=2
+<region> sample=A#3_3_1.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=3
+<region> sample=A#3_4_1.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=4
+
+<group>
+/*
+ * Middle Velocity 
+ * For alternate picking and such
+ * Right channel
+ */
+pan=100
+lovel=64 
+hivel=96
+
+<region> sample=G#1_3_1.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=1
+<region> sample=G#1_4_1.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=2
+<region> sample=G#1_1_1.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=3
+<region> sample=G#1_2_1.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=4
+
+<region> sample=D#2_3_1.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=1
+<region> sample=D#2_4_1.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=2
+<region> sample=D#2_1_1.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=3
+<region> sample=D#2_2_1.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=4
+
+<region> sample=G#2_3_1.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=1
+<region> sample=G#2_4_1.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=2
+<region> sample=G#2_1_1.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=3
+<region> sample=G#2_2_1.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=4
+
+<region> sample=C#3_3_1.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=1
+<region> sample=C#3_4_1.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=2
+<region> sample=C#3_1_1.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=3
+<region> sample=C#3_2_1.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=4
+
+<region> sample=F3_3_1.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=1
+<region> sample=F3_4_1.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=2
+<region> sample=F3_1_1.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=3
+<region> sample=F3_2_1.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=4
+
+<region> sample=A#3_3_1.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=1
+<region> sample=A#3_4_1.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=2
+<region> sample=A#3_1_1.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=3
+<region> sample=A#3_2_1.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=4
+
+<group>
+/*
+ * High Velocity
+ * For strong chords
+ * Left channel
+ */
+pan=-100
+lovel=97 
+hivel=127
+
+<region> sample=G#1_1_2.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=1
+<region> sample=G#1_2_2.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=2
+<region> sample=G#1_3_2.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=3
+<region> sample=G#1_4_2.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=4
+
+<region> sample=D#2_1_2.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=1
+<region> sample=D#2_2_2.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=2
+<region> sample=D#2_3_2.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=3
+<region> sample=D#2_4_2.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=4
+
+<region> sample=G#2_1_2.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=1
+<region> sample=G#2_2_2.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=2
+<region> sample=G#2_3_2.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=3
+<region> sample=G#2_4_2.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=4
+
+<region> sample=C#3_1_2.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=1
+<region> sample=C#3_2_2.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=2
+<region> sample=C#3_3_2.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=3
+<region> sample=C#3_4_2.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=4
+
+<region> sample=F3_1_2.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=1
+<region> sample=F3_2_2.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=2
+<region> sample=F3_3_2.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=3
+<region> sample=F3_4_2.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=4
+
+<region> sample=A#3_1_2.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=1
+<region> sample=A#3_2_2.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=2
+<region> sample=A#3_3_2.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=3
+<region> sample=A#3_4_2.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=4
+
+<group>
+/*
+ * High Velocity
+ * For strong chords
+ * Right channel
+ */
+pan=100
+lovel=97 
+hivel=127
+
+<region> sample=G#1_3_2.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=1
+<region> sample=G#1_4_2.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=2
+<region> sample=G#1_1_2.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=3
+<region> sample=G#1_2_2.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=4
+
+<region> sample=D#2_3_2.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=1
+<region> sample=D#2_4_2.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=2
+<region> sample=D#2_1_2.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=3
+<region> sample=D#2_2_2.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=4
+
+<region> sample=G#2_3_2.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=1
+<region> sample=G#2_4_2.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=2
+<region> sample=G#2_1_2.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=3
+<region> sample=G#2_2_2.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=4
+
+<region> sample=C#3_3_2.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=1
+<region> sample=C#3_4_2.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=2
+<region> sample=C#3_1_2.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=3
+<region> sample=C#3_2_2.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=4
+
+<region> sample=F3_3_2.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=1
+<region> sample=F3_4_2.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=2
+<region> sample=F3_1_2.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=3
+<region> sample=F3_2_2.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=4
+
+<region> sample=A#3_3_2.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=1
+<region> sample=A#3_4_2.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=2
+<region> sample=A#3_1_2.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=3
+<region> sample=A#3_2_2.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=4
+
+
+/* ========================================================================= *
+ * Muted Notes
+ * ========================================================================= */
+
+
+<group>
+/*
+ * Medium Velocity
+ * For alternate picking and such
+ * Left channel
+ */
+pan=-100
+lovel=0 
+hivel=32
+
+<region> sample=G#1_1_1_muted.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=1
+<region> sample=G#1_2_1_muted.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=2
+<region> sample=G#1_3_1_muted.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=3
+<region> sample=G#1_4_1_muted.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=4
+
+<region> sample=D#2_1_1_muted.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=1
+<region> sample=D#2_2_1_muted.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=2
+<region> sample=D#2_3_1_muted.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=3
+<region> sample=D#2_4_1_muted.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=4
+
+<region> sample=G#2_1_1_muted.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=1
+<region> sample=G#2_2_1_muted.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=2
+<region> sample=G#2_3_1_muted.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=3
+<region> sample=G#2_4_1_muted.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=4
+
+<region> sample=C#3_1_1_muted.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=1
+<region> sample=C#3_2_1_muted.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=2
+<region> sample=C#3_3_1_muted.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=3
+<region> sample=C#3_4_1_muted.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=4
+
+<region> sample=F3_1_1_muted.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=1
+<region> sample=F3_2_1_muted.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=2
+<region> sample=F3_3_1_muted.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=3
+<region> sample=F3_4_1_muted.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=4
+
+<region> sample=A#3_1_1_muted.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=1
+<region> sample=A#3_2_1_muted.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=2
+<region> sample=A#3_3_1_muted.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=3
+<region> sample=A#3_4_1_muted.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=4
+
+<group>
+/*
+ * Medium Velocity
+ * For alternate picking and such
+ * Right channel
+ */
+pan=100
+lovel=0 
+hivel=32
+
+<region> sample=G#1_3_1_muted.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=1
+<region> sample=G#1_4_1_muted.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=2
+<region> sample=G#1_1_1_muted.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=3
+<region> sample=G#1_2_1_muted.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=4
+
+<region> sample=D#2_3_1_muted.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=1
+<region> sample=D#2_4_1_muted.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=2
+<region> sample=D#2_1_1_muted.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=3
+<region> sample=D#2_2_1_muted.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=4
+
+<region> sample=G#2_3_1_muted.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=1
+<region> sample=G#2_4_1_muted.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=2
+<region> sample=G#2_1_1_muted.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=3
+<region> sample=G#2_2_1_muted.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=4
+
+<region> sample=C#3_3_1_muted.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=1
+<region> sample=C#3_4_1_muted.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=2
+<region> sample=C#3_1_1_muted.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=3
+<region> sample=C#3_2_1_muted.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=4
+
+<region> sample=F3_3_1_muted.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=1
+<region> sample=F3_4_1_muted.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=2
+<region> sample=F3_1_1_muted.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=3
+<region> sample=F3_2_1_muted.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=4
+
+<region> sample=A#3_3_1_muted.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=1
+<region> sample=A#3_4_1_muted.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=2
+<region> sample=A#3_1_1_muted.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=3
+<region> sample=A#3_2_1_muted.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=4
+
+<group>
+/*
+ * High Velocity
+ * For strong chugs
+ * Left channel
+ */
+pan=-100
+lovel=33
+hivel=63
+
+<region> sample=G#1_1_2_muted.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=1
+<region> sample=G#1_2_2_muted.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=2
+<region> sample=G#1_3_2_muted.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=3
+<region> sample=G#1_4_2_muted.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=4
+
+<region> sample=D#2_1_2_muted.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=1
+<region> sample=D#2_2_2_muted.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=2
+<region> sample=D#2_3_2_muted.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=3
+<region> sample=D#2_4_2_muted.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=4
+
+<region> sample=G#2_1_2_muted.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=1
+<region> sample=G#2_2_2_muted.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=2
+<region> sample=G#2_3_2_muted.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=3
+<region> sample=G#2_4_2_muted.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=4
+
+<region> sample=C#3_1_2_muted.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=1
+<region> sample=C#3_2_2_muted.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=2
+<region> sample=C#3_3_2_muted.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=3
+<region> sample=C#3_4_2_muted.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=4
+
+<region> sample=F3_1_2_muted.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=1
+<region> sample=F3_2_2_muted.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=2
+<region> sample=F3_3_2_muted.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=3
+<region> sample=F3_4_2_muted.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=4
+
+<region> sample=A#3_1_2_muted.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=1
+<region> sample=A#3_2_2_muted.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=2
+<region> sample=A#3_3_2_muted.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=3
+<region> sample=A#3_4_2_muted.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=4
+
+<group>
+/*
+ * High Velocity
+ * For strong chugs
+ * Right channel
+ */
+pan=100
+lovel=33
+hivel=63
+
+<region> sample=G#1_3_2_muted.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=1
+<region> sample=G#1_4_2_muted.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=2
+<region> sample=G#1_1_2_muted.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=3
+<region> sample=G#1_2_2_muted.wav lokey=19 hikey=38 pitch_keycenter=32 seq_position=4
+
+<region> sample=D#2_3_2_muted.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=1
+<region> sample=D#2_4_2_muted.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=2
+<region> sample=D#2_1_2_muted.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=3
+<region> sample=D#2_2_2_muted.wav lokey=39 hikey=43 pitch_keycenter=39 seq_position=4
+
+<region> sample=G#2_3_2_muted.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=1
+<region> sample=G#2_4_2_muted.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=2
+<region> sample=G#2_1_2_muted.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=3
+<region> sample=G#2_2_2_muted.wav lokey=44 hikey=48 pitch_keycenter=44 seq_position=4
+
+<region> sample=C#3_3_2_muted.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=1
+<region> sample=C#3_4_2_muted.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=2
+<region> sample=C#3_1_2_muted.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=3
+<region> sample=C#3_2_2_muted.wav lokey=49 hikey=52 pitch_keycenter=49 seq_position=4
+
+<region> sample=F3_3_2_muted.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=1
+<region> sample=F3_4_2_muted.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=2
+<region> sample=F3_1_2_muted.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=3
+<region> sample=F3_2_2_muted.wav  lokey=53 hikey=57 pitch_keycenter=53 seq_position=4
+
+<region> sample=A#3_3_2_muted.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=1
+<region> sample=A#3_4_2_muted.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=2
+<region> sample=A#3_1_2_muted.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=3
+<region> sample=A#3_2_2_muted.wav lokey=58 hikey=84 pitch_keycenter=58 seq_position=4
