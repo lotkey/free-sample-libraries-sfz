@@ -3,7 +3,7 @@ All of my free sample libraries with SFZ files configured for any SFZ-based samp
 
 ## The Libraries
 ### Baritone Stratocaster
-The Stratocaster in question is my MIM Fender Blacktop Stratocaster. I have swapped out the neck for a Warmoth Baritone Conversion Neck (28 5/8" scale). I have replaced the pickups with a Dimarzio D Activator in the bridge and added a coil split. It was recorded directly into my Focusrite Scarlett Solo 2nd Gen.
+The Stratocaster in question is my MIM Fender Blacktop Stratocaster. I have swapped out the neck for a Warmoth Baritone Conversion Neck (28 5/8" scale). I have replaced the pickups with a Dimarzio D Activator in the bridge and added a coil split. It was recorded directly into my Focusrite Scarlett Solo 2nd Gen. This library is specifically for high-gain, metal tones. There are clicks and pops when used otherwise.
 
 I have recorded two libraries with the Baritone Stratocaster: Humbucker and Split Coil. As the name suggests, the humbucker library is recorded with the full humbucker. The split coil library is recorded with the north coil of the humbucker.
 
@@ -14,7 +14,7 @@ I have recorded two libraries with the Baritone Stratocaster: Humbucker and Spli
 97 - 127: High Velocity Open Notes  
 
 ### Shecter Bass
-The bass in question is my Schecter Diamond Series Elite-5. I have made no modifications. The pickups are the default EMG HZ pickups. It was recorded directly into my Focusrite Scarlett Solo 2nd Gen.
+The bass in question is my Schecter Diamond Series Elite-5. I have made no modifications. The pickups are the default EMG HZ pickups. It was recorded directly into my Focusrite Scarlett Solo 2nd Gen. This library is specifically for high-gain, metal tones. There are clicks and pops when used otherwise.
 
 I have recorded one library with this bass.
 
