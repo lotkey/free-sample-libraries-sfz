@@ -12,7 +12,7 @@ Gauge (Inches) | .064 | .049 | .039 | .028 | .018 | .014 |
 */
 
 <control>
-default_path=./Guitar/Split Coil/ // Relative path of the samples
+default_path=./Guitar/Split/ // Relative path of the samples
 
 <global>
 seq_length=4
